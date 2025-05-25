@@ -1,13 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import { ThemeProvider } from '@/components/ThemeProvider';
+import { Header } from '@/components/sections/Header';
+import { Summary } from '@/components/sections/Summary';
+import { Experience } from '@/components/sections/Experience';
+import { Projects } from '@/components/sections/Projects';
+import { Education } from '@/components/sections/Education';
+import { Skills } from '@/components/sections/Skills';
+import { Achievements } from '@/components/sections/Achievements';
+import { Certifications } from '@/components/sections/Certifications';
+import { Passions } from '@/components/sections/Passions';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
+      <div className="scroll-snap-y overflow-y-auto h-screen">
+        <Header />
+        <Summary />
+        <Experience />
+        <Projects />
+        <Education />
+        <Skills />
+        <Achievements />
+        <Certifications />
+        <Passions />
       </div>
-    </div>
+    </ThemeProvider>
   );
 };
 
