@@ -24,7 +24,7 @@ export function Education() {
   ];
 
   return (
-    <AnimatedSection id="education" className="py-20">
+    <AnimatedSection id="education" className="flex items-center justify-center py-20">
       <div className="container mx-auto px-4">
         <AnimatedTitle icon={<Book className="h-10 w-10" />} className="text-center mb-12">
           Education
