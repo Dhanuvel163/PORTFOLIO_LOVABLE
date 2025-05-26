@@ -2,7 +2,6 @@
 import React from 'react';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Header } from '@/components/sections/Header';
-import { Summary } from '@/components/sections/Summary';
 import { Experience } from '@/components/sections/Experience';
 import { Projects } from '@/components/sections/Projects';
 import { Education } from '@/components/sections/Education';
@@ -16,7 +15,6 @@ const Index = () => {
     <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
       <div className="scroll-snap-y overflow-y-auto h-screen">
         <Header />
-        <Summary />
         <Experience />
         <Projects />
         <Education />

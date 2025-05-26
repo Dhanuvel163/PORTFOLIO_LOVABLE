@@ -25,9 +25,17 @@ export function Header() {
             Senior Software Engineer
           </h2>
           
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-slide-in-right delay-500">
-            Passionate coder with a creative approach to problem-solving
-          </p>
+          <div className="max-w-4xl mx-auto mt-8 animate-slide-in-right delay-500">
+            <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+              A passionate coder with a creative approach to problem-solving, contributing to 
+              organizational improvements, team collaboration, and achieving key business goals. 
+              Specialties include{' '}
+              <span className="text-primary font-semibold">responsive web design</span>, 
+              <span className="text-primary font-semibold"> application performance optimization</span>, 
+              and <span className="text-primary font-semibold">rapid learning of new skills</span>. 
+              Enthusiastic about exploring emerging technologies.
+            </p>
+          </div>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 animate-fade-in delay-700">
@@ -73,12 +81,6 @@ export function Header() {
           <span>dhanuram99@gmail.com</span>
           <span className="mx-2">|</span>
           <span>7358961528</span>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
-          </div>
         </div>
       </div>
     </AnimatedSection>
