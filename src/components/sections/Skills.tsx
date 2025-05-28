@@ -20,7 +20,7 @@ export function Skills() {
     {
       title: "Technology",
       icon: <Settings className="h-6 w-6" />,
-      skills: ["Git", "Github", "AWS", "Linux", "Jira", "GCP"]
+      skills: ["Git", "AWS", "Linux", "Jira", "GCP"]
     }
   ];
 

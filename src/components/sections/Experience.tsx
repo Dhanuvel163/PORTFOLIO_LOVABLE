@@ -15,10 +15,10 @@ export function Experience() {
       location: "Bangalore",
       achievements: [
         "Led agile development of 5+ major features for health insurance products, improving customer onboarding efficiency by 25%.",
-        "Redesigned ICICI Renewal Flow, improving data accuracy for 1K+ policyholders and reducing renewal support tickets by 40%.",
+        "Redesigned ICICI Renewal Flow, improving data accuracy for 1K+ policyholders and reducing renewal support tickets by 40%. Worked on health offline upload feature to make it compatible with renewals.",
         "Streamlined partner API, closing 15+ integration gaps.",
-        "Programmed custom config-based solution supporting unlimited sum insured and age-specific logic for 10K+ users.",
-        "Ensured pan card and multi-policy-flow solutions across diverse partner environments."
+        "Programmed custom config-based solution to support unlimited sum insured and age-specific logic, enhancing personalization for 10K+ Nivabhupa Aspire and ICICI users.",
+        "Ensured plan card and multi-policy flow solutions, driving efficient and scalable integration across diverse partner environments."
       ]
     },
     {
@@ -29,15 +29,15 @@ export function Experience() {
       projects: [
         {
           name: "RISKCOVRY",
-          description: "Integrated 30+ API across 50+ insurance partners enabling intelligent pricing for 100K+ purchases. Enhanced add-ons and product comparison tools, boosting user conversion by 20%."
+          description: "Integrated 30+ API across 50+ insurance partners from different pods like health, motor etc enabling intelligent pricing and facilitating over 100 K+ purchases. Enhanced add-ons and product comparison tools, boosting user conversion by 20% on partner portals."
         },
         {
-          name: "KALAIGNAR TV",
-          description: "Developed RESTful API with Node.js handling 1000+ concurrent users. Led 5-member team delivering 3 modules within 2-month sprints."
+          name: "KALANJU",
+          description: "Developed a RESTful API with Node.js to handle employee data supporting 1000+ concurrent users with minimal latency. Led 5-member development team to deliver 3 modules : leads, invoicing and project tracking within 2-month sprint cycles."
         },
         {
           name: "EXTRA MILE",
-          description: "Crafted system for managing games with plans for 50+ organizations with 100+ users each. Set up CI/CD pipeline reducing release time by 40%."
+          description: "Identified requirements for scalable features across organization / user management, subscriptions and game management. Crafted a system for managing games with plans, enabling efficient allocation adopted by 50+ organizations, each with 100+ users. Set up a CI/CD pipeline that automated deployments, reducing release time by 40% and ensuring efficient delivery across all microservices."
         }
       ]
     }
@@ -48,9 +48,6 @@ export function Experience() {
       <div className="container mx-auto px-4">
         <AnimatedTitle 
           className="text-center mb-12"
-          showAvatar={true}
-          avatarSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
-          avatarFallback="EX"
         >
           Experience
         </AnimatedTitle>

@@ -10,25 +10,29 @@ export function Projects() {
   const projects = [
     {
       title: "LinkedIn for Lawyers",
-      tech: "MERN Stack",
+      tech: "MERN",
       description: "A web app serving as a social media platform for lawyers and the general public with responsive design.",
       achievements: [
         "Optimized page load performance to achieve Google Lighthouse score of 100",
         "Reduced bundle size from 20 MB to 2 MB with same features",
         "Responsive design for exceptional user experience"
       ],
-      tags: ["React", "Node.js", "MongoDB", "Express"]
+      tags: ["React", "Node.js", "MongoDB", "Express"],
+      github: "https://github.com/Dhanuvel163/PEPLAW-PREACT",
+      website: "https://pep-law-react.web.app/home"
     },
     {
       title: "Application Monitoring",
-      tech: "React",
+      tech: "MERN",
       description: "A website that monitors the availability status of websites with automated reporting.",
       achievements: [
         "Real-time website availability monitoring",
         "Automated email notifications with PDF reports",
         "Comprehensive failure analysis and reporting"
       ],
-      tags: ["React", "Monitoring", "Email", "PDF Generation"]
+      tags: ["React", "Lighthouse", "Email", "PDF Generation"],
+      github: "https://github.com/Dhanuvel163/WEBMON-NODESERVER",
+      website: "https://webmon-react.vercel.app/"
     }
   ];
 
@@ -78,14 +82,22 @@ export function Projects() {
                   </div>
                   
                   <div className="flex gap-3">
-                    <Button size="sm" variant="outline" className="flex-1">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button size="sm" className="flex-1">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Demo
-                    </Button>
+                    {
+                      project.github &&
+                      <Button size="sm" variant="outline" className="flex-1" 
+                        onClick={()=>{window.open(project.github, '_blank')}}>
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </Button>
+                    }
+                    {
+                      project.website &&
+                      <Button size="sm" className="flex-1"
+                        onClick={()=>{window.open(project.website, '_blank')}}>
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Demo
+                      </Button>
+                    }
                   </div>
                 </div>
               </div>

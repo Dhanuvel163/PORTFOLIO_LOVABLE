@@ -63,7 +63,7 @@ export function AnimatedTitle({
         <Avatar 
           className={cn(
             'transition-all duration-700 delay-200',
-            level === 'h1' && 'w-16 h-16 md:w-20 md:h-20',
+            level === 'h1' && 'w-[7rem] h-[7rem] md:w-[7rem] md:h-[7rem]',
             level === 'h2' && 'w-12 h-12 md:w-16 md:h-16',
             level === 'h3' && 'w-10 h-10 md:w-12 md:h-12',
             level === 'h4' && 'w-8 h-8 md:w-10 md:h-10',

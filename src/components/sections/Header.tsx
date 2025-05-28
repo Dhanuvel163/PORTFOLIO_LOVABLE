@@ -18,6 +18,9 @@ export function Header() {
           <AnimatedTitle 
             level="h1" 
             className="mb-8"
+            showAvatar={true}
+            avatarSrc="https://i.ibb.co/t184M9t/IMG-20250427-212914-4.jpg"
+            avatarFallback="D"
           >
             Dhanavel
           </AnimatedTitle>
