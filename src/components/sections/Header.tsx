@@ -18,9 +18,6 @@ export function Header() {
           <AnimatedTitle 
             level="h1" 
             className="mb-8"
-            showAvatar={true}
-            avatarSrc="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=200&h=200&fit=crop&crop=face"
-            avatarFallback="DN"
           >
             Dhanavel
           </AnimatedTitle>
@@ -49,7 +46,7 @@ export function Header() {
             className="group hover:scale-105 transition-all duration-300"
             asChild
           >
-            <a href="https://github.com/dhanavel" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Dhanuvel163" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5 mr-2 group-hover:rotate-12 transition-transform" />
               GitHub
             </a>
@@ -61,21 +58,9 @@ export function Header() {
             className="group hover:scale-105 transition-all duration-300"
             asChild
           >
-            <a href="https://linkedin.com/in/dhanavel" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/dhanavel-ramachandran-721802193/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5 mr-2 group-hover:rotate-12 transition-transform" />
               LinkedIn
-            </a>
-          </Button>
-          
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="group hover:scale-105 transition-all duration-300"
-            asChild
-          >
-            <a href="#projects">
-              <Code className="h-5 w-5 mr-2 group-hover:rotate-12 transition-transform" />
-              Portfolio
             </a>
           </Button>
         </div>

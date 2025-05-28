@@ -18,9 +18,9 @@ const Index = () => {
         <Experience />
         <Skills />
         <Projects />
-        <Education />
         <Achievements />
         <Certifications />
+        <Education />
         <Passions />
       </div>
     </ThemeProvider>

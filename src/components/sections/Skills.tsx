@@ -29,9 +29,6 @@ export function Skills() {
       <div className="container mx-auto px-4">
         <AnimatedTitle 
           className="text-center mb-12"
-          showAvatar={true}
-          avatarSrc="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=200&h=200&fit=crop&crop=face"
-          avatarFallback="SK"
         >
           Skills
         </AnimatedTitle>
