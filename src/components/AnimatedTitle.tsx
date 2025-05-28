@@ -61,7 +61,7 @@ export function AnimatedTitle({
         </span>
       )}
       <span className={cn(
-        'bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent',
+        'text-primary',
         'transition-all duration-700 delay-300',
         isVisible ? 'translate-x-0' : 'translate-x-4'
       )}>
