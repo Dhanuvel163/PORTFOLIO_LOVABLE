@@ -44,7 +44,7 @@ export function Experience() {
   ];
 
   return (
-    <AnimatedSection id="experience" className="py-20">
+    <AnimatedSection id="experience" className="py-20 flex items-center justify-center">
       <div className="container mx-auto px-4">
         <AnimatedTitle 
           className="text-center mb-12"
