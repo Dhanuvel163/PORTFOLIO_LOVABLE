@@ -61,9 +61,14 @@ export function AnimatedTitle({
         </span>
       )}
       <span className={cn(
-        'text-primary',
-        'transition-all duration-700 delay-300',
-        isVisible ? 'translate-x-0' : 'translate-x-4'
+        'text-blue-600 dark:text-blue-400',
+        'font-black tracking-wider uppercase',
+        'relative',
+        'text-outline',
+        'transition-all duration-1000',
+        isVisible 
+          ? 'translate-x-0 animate-kinetic-entrance' 
+          : 'translate-x-8 opacity-0'
       )}>
         {children}
       </span>

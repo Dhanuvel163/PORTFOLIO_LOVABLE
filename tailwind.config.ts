@@ -141,6 +141,20 @@ export default {
 					'50%': {
 						boxShadow: '0 0 30px rgba(59, 130, 246, 0.8)'
 					}
+				},
+				'kinetic-entrance': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(50px) scale(0.8) rotateY(30deg)'
+					},
+					'50%': {
+						opacity: '0.8',
+						transform: 'translateX(-10px) scale(1.05) rotateY(-5deg)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateX(0) scale(1) rotateY(0deg)'
+					}
 				}
 			},
 			animation: {
@@ -151,7 +165,8 @@ export default {
 				'slide-in-right': 'slide-in-right 0.6s ease-out',
 				'glide-in': 'glide-in 0.8s ease-out',
 				'float': 'float 3s ease-in-out infinite',
-				'glow': 'glow 2s ease-in-out infinite'
+				'glow': 'glow 2s ease-in-out infinite',
+				'kinetic-entrance': 'kinetic-entrance 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards'
 			},
 			scrollSnapType: {
 				'y': 'y mandatory',
