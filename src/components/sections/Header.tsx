@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '../ThemeToggle';
 import { Github, Linkedin, Mail, Code } from 'lucide-react';
 import { AnimatedSection } from '../AnimatedSection';
+import { AnimatedTitle } from '../AnimatedTitle';
 
 export function Header() {
   return (
@@ -13,13 +14,16 @@ export function Header() {
       </div>
       
       <div className="container mx-auto px-4 text-center space-y-8">
-        <div className="space-y-4 animate-fade-in">
-          <div className="relative">
-            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-primary via-blue-600 to-purple-600 bg-clip-text text-transparent animate-glide-in">
-              Dhanavel
-            </h1>
-            <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-purple-600/20 blur-lg -z-10 animate-glow"></div>
-          </div>
+        <div className="space-y-8 animate-fade-in">
+          <AnimatedTitle 
+            level="h1" 
+            className="mb-8"
+            showAvatar={true}
+            avatarSrc="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=200&h=200&fit=crop&crop=face"
+            avatarFallback="DN"
+          >
+            Dhanavel
+          </AnimatedTitle>
           
           <h2 className="text-2xl md:text-3xl text-muted-foreground font-light animate-slide-in-left delay-300">
             Senior Software Engineer
