@@ -27,7 +27,7 @@ export function Skills() {
   return (
     <AnimatedSection id="skills" className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
-        <AnimatedTitle icon={<Code className="h-10 w-10" />} className="text-center mb-12">
+        <AnimatedTitle className="text-center mb-12">
           Skills
         </AnimatedTitle>
         
@@ -45,7 +45,7 @@ export function Skills() {
                   {category.skills.map((skill, skillIndex) => (
                     <div
                       key={skillIndex}
-                      className="group relative overflow-hidden bg-secondary/30 rounded-full py-2 px-4 hover:bg-primary/10 transition-all duration-300"
+                      className="group relative overflow-hidden bg-secondary/30 border border-gray-300 dark:border-gray-600 rounded-full py-2 px-4 hover:bg-primary/10 transition-all duration-300"
                     >
                       <span className="relative z-10 font-medium">{skill}</span>
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-600/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500"></div>

@@ -22,7 +22,7 @@ export function Achievements() {
   return (
     <AnimatedSection id="achievements" className="flex items-center justify-center py-20">
       <div className="container mx-auto px-4">
-        <AnimatedTitle icon={<Award className="h-10 w-10" />} className="text-center mb-12">
+        <AnimatedTitle className="text-center mb-12">
           Achievements
         </AnimatedTitle>
         

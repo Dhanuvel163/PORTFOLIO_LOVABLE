@@ -35,7 +35,7 @@ export function Projects() {
   return (
     <AnimatedSection id="projects" className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
-        <AnimatedTitle icon={<Code className="h-10 w-10" />} className="text-center mb-12">
+        <AnimatedTitle className="text-center mb-12">
           Projects
         </AnimatedTitle>
         

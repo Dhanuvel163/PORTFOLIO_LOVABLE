@@ -45,7 +45,7 @@ export function Experience() {
   return (
     <AnimatedSection id="experience" className="py-20">
       <div className="container mx-auto px-4">
-        <AnimatedTitle icon={<Briefcase className="h-10 w-10" />} className="text-center mb-12">
+        <AnimatedTitle className="text-center mb-12">
           Experience
         </AnimatedTitle>
         
