@@ -155,6 +155,28 @@ export default {
 						opacity: '1',
 						transform: 'translateX(0) scale(1) rotateY(0deg)'
 					}
+				},
+				'typography-entrance': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px) scaleY(0.3)',
+						filter: 'blur(10px)'
+					},
+					'30%': {
+						opacity: '0.4',
+						transform: 'translateY(15px) scaleY(0.7)',
+						filter: 'blur(5px)'
+					},
+					'60%': {
+						opacity: '0.8',
+						transform: 'translateY(5px) scaleY(0.9)',
+						filter: 'blur(2px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0) scaleY(1)',
+						filter: 'blur(0px)'
+					}
 				}
 			},
 			animation: {
@@ -166,7 +188,8 @@ export default {
 				'glide-in': 'glide-in 0.8s ease-out',
 				'float': 'float 3s ease-in-out infinite',
 				'glow': 'glow 2s ease-in-out infinite',
-				'kinetic-entrance': 'kinetic-entrance 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards'
+				'kinetic-entrance': 'kinetic-entrance 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards',
+				'typography-entrance': 'typography-entrance 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards'
 			},
 			scrollSnapType: {
 				'y': 'y mandatory',

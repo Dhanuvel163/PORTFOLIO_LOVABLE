@@ -90,11 +90,11 @@ export function AnimatedTitle({
         'text-blue-600 dark:text-blue-400',
         'font-black tracking-wider uppercase',
         'relative text-center',
-        'text-outline',
+        'text-outline-dynamic',
         'transition-all duration-1000',
         'whitespace-nowrap',
         isVisible 
-          ? 'translate-x-0 animate-kinetic-entrance' 
+          ? 'translate-x-0 animate-typography-entrance' 
           : 'translate-x-8 opacity-0'
       )}>
         {children}

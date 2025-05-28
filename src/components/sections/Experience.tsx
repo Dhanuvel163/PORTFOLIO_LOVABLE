@@ -4,6 +4,7 @@ import { Briefcase, MapPin, Calendar } from 'lucide-react';
 import { AnimatedSection } from '../AnimatedSection';
 import { AnimatedTitle } from '../AnimatedTitle';
 import { AnimatedCard } from '../AnimatedCard';
+import { Badge } from '@/components/ui/badge';
 
 export function Experience() {
   const experiences = [
@@ -45,7 +46,12 @@ export function Experience() {
   return (
     <AnimatedSection id="experience" className="py-20">
       <div className="container mx-auto px-4">
-        <AnimatedTitle className="text-center mb-12">
+        <AnimatedTitle 
+          className="text-center mb-12"
+          showAvatar={true}
+          avatarSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+          avatarFallback="EX"
+        >
           Experience
         </AnimatedTitle>
         
@@ -56,17 +62,23 @@ export function Experience() {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                   <div>
                     <h3 className="text-2xl font-bold text-primary mb-2">{exp.company}</h3>
-                    <h4 className="text-xl font-semibold mb-2">{exp.role}</h4>
+                    <h4 className="text-xl font-semibold mb-4">{exp.role}</h4>
                   </div>
-                  <div className="flex flex-col md:items-end space-y-1 text-muted-foreground">
-                    <div className="flex items-center gap-2">
+                  <div className="flex flex-wrap gap-3">
+                    <Badge 
+                      variant="outline" 
+                      className="bg-blue-50 border-blue-200 text-blue-700 dark:bg-blue-950 dark:border-blue-800 dark:text-blue-300 px-3 py-1 text-sm font-medium flex items-center gap-2"
+                    >
                       <Calendar className="h-4 w-4" />
-                      <span>{exp.period}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
+                      {exp.period}
+                    </Badge>
+                    <Badge 
+                      variant="outline" 
+                      className="bg-green-50 border-green-200 text-green-700 dark:bg-green-950 dark:border-green-800 dark:text-green-300 px-3 py-1 text-sm font-medium flex items-center gap-2"
+                    >
                       <MapPin className="h-4 w-4" />
-                      <span>{exp.location}</span>
-                    </div>
+                      {exp.location}
+                    </Badge>
                   </div>
                 </div>
 

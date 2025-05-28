@@ -108,4 +108,25 @@
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
   }
+
+  .text-outline-dynamic {
+    -webkit-text-stroke: 2px currentColor;
+    text-stroke: 2px currentColor;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background: linear-gradient(45deg, currentColor, transparent, currentColor);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shimmer 2s ease-in-out infinite;
+  }
+
+  @keyframes shimmer {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
 }
