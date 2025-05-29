@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Heart, Music, Code } from 'lucide-react';
 import { AnimatedSection } from '../AnimatedSection';
@@ -28,7 +27,7 @@ export function Passions() {
   ];
 
   return (
-    <AnimatedSection id="passions" className="flex items-center justify-center py-20">
+    <AnimatedSection id="passions" className="flex items-center justify-center py-20" isLastSection={true}>
       <div className="container mx-auto px-4">
         <AnimatedTitle className="text-center mb-12">
           Passions
