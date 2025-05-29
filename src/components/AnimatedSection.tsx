@@ -40,6 +40,16 @@ export function AnimatedSection({
     return () => observer.disconnect();
   }, []);
 
+  const handleScrollNext = () => {
+    const container = sectionRef.current;
+    const nextSection = container?.nextSibling?.nextSibling
+    if(nextSection){
+      //@ts-ignore
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    console.log({container})
+  };
+
   return (
     <section
       ref={sectionRef}
@@ -53,7 +63,7 @@ export function AnimatedSection({
     >
       {children}
       {showScrollIndicator && (
-        <ScrollIndicator isLastSection={isLastSection} />
+        <ScrollIndicator isLastSection={isLastSection} onClick={()=>{handleScrollNext()}}/>
       )}
     </section>
   );

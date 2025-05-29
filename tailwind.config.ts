@@ -179,27 +179,27 @@ export default {
 				},
 				'wave-draw': {
 					'0%': {
-						strokeDashoffset: '20',
+						strokeDashoffset: '-40',
 						opacity: '0'
 					},
 					'20%': {
-						strokeDashoffset: '10',
+						strokeDashoffset: '-40',
 						opacity: '0.6'
 					},
 					'40%': {
-						strokeDashoffset: '0',
+						strokeDashoffset: '-40',
 						opacity: '1'
 					},
-					'60%': {
-						strokeDashoffset: '-10',
-						opacity: '0.8'
-					},
+					// '60%': {
+					// 	strokeDashoffset: '-40',
+					// 	opacity: '0.8'
+					// },
 					'80%': {
-						strokeDashoffset: '-20',
+						strokeDashoffset: '-40',
 						opacity: '0.4'
 					},
 					'100%': {
-						strokeDashoffset: '-30',
+						strokeDashoffset: '-40',
 						opacity: '0'
 					}
 				}
