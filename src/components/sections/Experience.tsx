@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Briefcase, MapPin, Calendar } from 'lucide-react';
+import { Briefcase, MapPin, Calendar, ExternalLink } from 'lucide-react';
 import { AnimatedSection } from '../AnimatedSection';
 import { AnimatedTitle } from '../AnimatedTitle';
 import { AnimatedCard } from '../AnimatedCard';
@@ -29,14 +29,17 @@ export function Experience() {
       projects: [
         {
           name: "RISKCOVRY",
+          link: 'https://riskcovry.com/',
           description: "Integrated 30+ API across 50+ insurance partners from different pods like health, motor etc enabling intelligent pricing and facilitating over 100 K+ purchases. Enhanced add-ons and product comparison tools, boosting user conversion by 20% on partner portals."
         },
         {
           name: "KALANJU",
+          link: 'https://kalanju.com/',
           description: "Developed a RESTful API with Node.js to handle employee data supporting 1000+ concurrent users with minimal latency. Led 5-member development team to deliver 3 modules : leads, invoicing and project tracking within 2-month sprint cycles."
         },
         {
           name: "EXTRA MILE",
+          link: 'https://extramileplay.com/',
           description: "Identified requirements for scalable features across organization / user management, subscriptions and game management. Crafted a system for managing games with plans, enabling efficient allocation adopted by 50+ organizations, each with 100+ users. Set up a CI/CD pipeline that automated deployments, reducing release time by 40% and ensuring efficient delivery across all microservices."
         }
       ]
@@ -99,7 +102,14 @@ export function Experience() {
                     <div className="grid gap-4">
                       {exp.projects.map((project, i) => (
                         <div key={i} className="border-l-4 border-primary/30 pl-4">
-                          <h6 className="font-semibold text-primary mb-2">{project.name}</h6>
+                          <h6 className="font-semibold text-primary mb-2 flex items-center gap-2">
+                            {project.name}
+                            {
+                              project.link &&
+                              <ExternalLink className="h-4 w-4 text-muted-foreground" 
+                                onClick={()=>{window.open(project.link)}}/>
+                            }
+                          </h6>
                           <p className="text-muted-foreground">{project.description}</p>
                         </div>
                       ))}
