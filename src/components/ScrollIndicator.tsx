@@ -32,11 +32,10 @@ export function ScrollIndicator({ className, isLastSection = false }: ScrollIndi
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="animate-[stroke-draw_2s_ease-in-out_infinite]"
+            className="animate-[wave-draw_3s_ease-in-out_infinite]"
             style={{
               strokeDasharray: '20',
-              strokeDashoffset: '20',
-              animation: 'stroke-draw 2s ease-in-out infinite'
+              strokeDashoffset: '20'
             }}
           />
         </svg>
@@ -46,7 +45,7 @@ export function ScrollIndicator({ className, isLastSection = false }: ScrollIndi
           width="20" 
           height="20" 
           viewBox="0 0 24 24" 
-          className="text-primary/60 -mt-2"
+          className="text-primary/70 -mt-2"
         >
           <path
             d="M7 10l5 5 5-5"
@@ -55,11 +54,32 @@ export function ScrollIndicator({ className, isLastSection = false }: ScrollIndi
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="animate-[fill-draw_2s_ease-in-out_infinite_0.5s]"
+            className="animate-[wave-draw_3s_ease-in-out_infinite_0.5s]"
             style={{
               strokeDasharray: '20',
-              strokeDashoffset: '20',
-              animation: 'fill-draw 2s ease-in-out infinite 0.5s'
+              strokeDashoffset: '20'
+            }}
+          />
+        </svg>
+
+        {/* Third Arrow */}
+        <svg 
+          width="16" 
+          height="16" 
+          viewBox="0 0 24 24" 
+          className="text-primary/40 -mt-2"
+        >
+          <path
+            d="M7 10l5 5 5-5"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="animate-[wave-draw_3s_ease-in-out_infinite_1s]"
+            style={{
+              strokeDasharray: '20',
+              strokeDashoffset: '20'
             }}
           />
         </svg>
