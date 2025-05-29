@@ -26,7 +26,7 @@ export function Passions() {
     // },
     {
       title: "AI",
-      description: "Exploring AI Agents and Prompt Engineering",
+      description: "Exploration of AI agents and the principles of prompt engineering",
       icon: <Brain className="h-8 w-8" />,
       color: "from-purple-400/20 to-purple-600/20"
     }
