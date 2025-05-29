@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Music, Code } from 'lucide-react';
+import { Heart, Music, Code, Brain } from 'lucide-react';
 import { AnimatedSection } from '../AnimatedSection';
 import { AnimatedTitle } from '../AnimatedTitle';
 import { AnimatedCard } from '../AnimatedCard';
@@ -18,14 +18,19 @@ export function Passions() {
       icon: <Code className="h-8 w-8" />,
       color: "from-blue-400/20 to-blue-600/20"
     },
+    // {
+    //   title: "Music",
+    //   description: "Enjoy listening to melody, rap, and fusion music.",
+    //   icon: <Music className="h-8 w-8" />,
+    //   color: "from-purple-400/20 to-purple-600/20"
+    // },
     {
-      title: "Music",
-      description: "Enjoy listening to melody, rap, and fusion music.",
-      icon: <Music className="h-8 w-8" />,
+      title: "AI",
+      description: "Exploring AI Agents and Prompt Engineering",
+      icon: <Brain className="h-8 w-8" />,
       color: "from-purple-400/20 to-purple-600/20"
     }
   ];
-
   return (
     <AnimatedSection id="passions" className="flex items-center justify-center py-20" isLastSection={true}>
       <div className="container mx-auto px-4">
