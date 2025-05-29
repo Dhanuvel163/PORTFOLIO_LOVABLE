@@ -12,15 +12,22 @@ import { Passions } from '@/components/sections/Passions';
 
 const Index = () => {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
       <div className="scroll-snap-y overflow-y-auto h-screen">
         <Header />
+        <hr/>
         <Experience />
+        <hr/>
         <Skills />
+        <hr/>
         <Projects />
+        <hr/>
         <Achievements />
+        <hr/>
         <Certifications />
+        <hr/>
         <Education />
+        <hr/>
         <Passions />
       </div>
     </ThemeProvider>
