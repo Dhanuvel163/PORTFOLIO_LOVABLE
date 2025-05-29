@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -177,6 +176,34 @@ export default {
 						transform: 'translateY(0) scaleY(1)',
 						filter: 'blur(0px)'
 					}
+				},
+				'stroke-draw': {
+					'0%': {
+						strokeDashoffset: '20',
+						opacity: '0.3'
+					},
+					'50%': {
+						strokeDashoffset: '0',
+						opacity: '1'
+					},
+					'100%': {
+						strokeDashoffset: '-20',
+						opacity: '0.3'
+					}
+				},
+				'fill-draw': {
+					'0%': {
+						strokeDashoffset: '20',
+						opacity: '0.2'
+					},
+					'50%': {
+						strokeDashoffset: '0',
+						opacity: '0.8'
+					},
+					'100%': {
+						strokeDashoffset: '-20',
+						opacity: '0.2'
+					}
 				}
 			},
 			animation: {
@@ -189,7 +216,9 @@ export default {
 				'float': 'float 3s ease-in-out infinite',
 				'glow': 'glow 2s ease-in-out infinite',
 				'kinetic-entrance': 'kinetic-entrance 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards',
-				'typography-entrance': 'typography-entrance 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards'
+				'typography-entrance': 'typography-entrance 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards',
+				'stroke-draw': 'stroke-draw 2s ease-in-out infinite',
+				'fill-draw': 'fill-draw 2s ease-in-out infinite'
 			},
 			scrollSnapType: {
 				'y': 'y mandatory',

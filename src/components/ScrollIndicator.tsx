@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface ScrollIndicatorProps {
@@ -14,15 +13,57 @@ export function ScrollIndicator({ className, isLastSection = false }: ScrollIndi
   return (
     <div className={cn(
       'absolute bottom-8 left-1/2 transform -translate-x-1/2',
-      'flex flex-col items-center gap-2',
-      'animate-bounce opacity-70 hover:opacity-100 transition-opacity duration-300',
+      'flex flex-col items-center',
+      'opacity-70 hover:opacity-100 transition-opacity duration-300',
       className
     )}>
       <div className="flex flex-col items-center">
-        <ChevronDown className="h-6 w-6 text-primary animate-pulse" />
-        <ChevronDown className="h-4 w-4 text-primary/60 -mt-2" />
+        {/* First Arrow */}
+        <svg 
+          width="24" 
+          height="24" 
+          viewBox="0 0 24 24" 
+          className="text-primary"
+        >
+          <path
+            d="M7 10l5 5 5-5"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="animate-[stroke-draw_2s_ease-in-out_infinite]"
+            style={{
+              strokeDasharray: '20',
+              strokeDashoffset: '20',
+              animation: 'stroke-draw 2s ease-in-out infinite'
+            }}
+          />
+        </svg>
+        
+        {/* Second Arrow */}
+        <svg 
+          width="20" 
+          height="20" 
+          viewBox="0 0 24 24" 
+          className="text-primary/60 -mt-2"
+        >
+          <path
+            d="M7 10l5 5 5-5"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="animate-[fill-draw_2s_ease-in-out_infinite_0.5s]"
+            style={{
+              strokeDasharray: '20',
+              strokeDashoffset: '20',
+              animation: 'fill-draw 2s ease-in-out infinite 0.5s'
+            }}
+          />
+        </svg>
       </div>
-      <span className="text-xs text-muted-foreground font-medium">Scroll</span>
     </div>
   );
 }
