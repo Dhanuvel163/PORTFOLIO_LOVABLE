@@ -25,7 +25,7 @@ export function AnimatedSection({
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
 
     if (sectionRef.current) {
@@ -40,9 +40,9 @@ export function AnimatedSection({
       ref={sectionRef}
       id={id}
       className={cn(
-        'scroll-snap-start transition-all duration-1000',
+        'scroll-snap-start transition-all duration-700 ease-out',
         fullHeight && 'min-h-screen',
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10',
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 lg:translate-y-10',
         className
       )}
     >

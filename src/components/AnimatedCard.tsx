@@ -40,10 +40,10 @@ export function AnimatedCard({
     if (isVisible) return 'translate-x-0 translate-y-0 opacity-100';
     
     switch (direction) {
-      case 'left': return '-translate-x-10 lg:-translate-x-10 opacity-0';
-      case 'right': return 'translate-x-10 lg:translate-x-10 opacity-0';
-      case 'down': return '-translate-x-8 lg:translate-y-10 opacity-0';
-      default: return '-translate-x-8 lg:translate-y-10 opacity-0';
+      case 'left': return '-translate-x-4 lg:-translate-x-10 opacity-0';
+      case 'right': return 'translate-x-4 lg:translate-x-10 opacity-0';
+      case 'down': return '-translate-x-4 lg:translate-y-10 opacity-0';
+      default: return '-translate-x-4 lg:translate-y-10 opacity-0';
     }
   };
 

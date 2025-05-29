@@ -32,7 +32,7 @@ export function AnimatedTitle({
           setIsVisible(true);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.1 }
     );
 
     if (titleRef.current) {
@@ -56,7 +56,7 @@ export function AnimatedTitle({
         // Mobile: simple slide from left, Desktop: complex animation
         isVisible 
           ? 'opacity-100 translate-x-0 translate-y-0 scale-100' 
-          : 'opacity-0 -translate-x-8 lg:translate-y-8 lg:scale-95',
+          : 'opacity-0 -translate-x-4 lg:-translate-x-8 lg:translate-y-8 lg:scale-95',
         className
       )}
     >
@@ -69,7 +69,7 @@ export function AnimatedTitle({
             level === 'h3' && 'w-10 h-10 md:w-12 md:h-12',
             level === 'h4' && 'w-8 h-8 md:w-10 md:h-10',
             // Mobile: no rotation, Desktop: rotation effect
-            isVisible ? 'rotate-0 scale-100' : 'lg:rotate-12 scale-0'
+            isVisible ? 'rotate-0 scale-100' : 'scale-90 lg:rotate-12 lg:scale-0'
           )}
         >
           <AvatarImage src={avatarSrc} alt="Profile" />
@@ -83,7 +83,7 @@ export function AnimatedTitle({
         <span className={cn(
           'transition-all duration-700 ease-out delay-200',
           // Mobile: no rotation, Desktop: rotation effect
-          isVisible ? 'rotate-0 scale-100' : 'lg:rotate-12 scale-0'
+          isVisible ? 'rotate-0 scale-100' : 'scale-90 lg:rotate-12 lg:scale-0'
         )}>
           {icon}
         </span>
@@ -99,7 +99,7 @@ export function AnimatedTitle({
         // Mobile: simple slide, Desktop: complex animation with typography entrance
         isVisible 
           ? 'translate-x-0 lg:animate-typography-entrance' 
-          : 'translate-x-8 opacity-0'
+          : 'translate-x-4 lg:translate-x-8 opacity-0'
       )}>
         {children}
       </span>
