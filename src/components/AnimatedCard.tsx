@@ -37,13 +37,13 @@ export function AnimatedCard({
   }, [delay]);
 
   const getTransformClass = () => {
-    if (isVisible) return 'translate-x-0 translate-y-0 opacity-100';
+    if (isVisible) return 'animate-slide-in-left delay-300 invisible';
     
     switch (direction) {
-      case 'left': return '-translate-x-4 lg:-translate-x-10 opacity-0';
-      case 'right': return 'translate-x-4 lg:translate-x-10 opacity-0';
-      case 'down': return '-translate-x-4 lg:translate-y-10 opacity-0';
-      default: return '-translate-x-4 lg:translate-y-10 opacity-0';
+      case 'left': return '-translate-x-4 lg:-translate-x-15 opacity-0';
+      case 'right': return 'translate-x-4 lg:translate-x-15 opacity-0';
+      case 'down': return '-translate-x-4 lg:translate-y-15 opacity-0';
+      default: return '-translate-x-4 lg:translate-y-15 opacity-0';
     }
   };
 
@@ -51,7 +51,7 @@ export function AnimatedCard({
     <Card
       ref={cardRef}
       className={cn(
-        'transition-all duration-700 ease-out transform',
+        // 'animate-slide-in-left delay-300 invisible',
         'shadow-lg dark:shadow-2xl',
         'border border-border/50 bg-card/80 backdrop-blur-sm',
         // Mobile: no hover effects, Desktop: hover effects
