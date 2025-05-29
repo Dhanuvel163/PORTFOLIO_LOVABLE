@@ -55,8 +55,8 @@ export function AnimatedTitle({
         level === 'h4' && 'text-xl md:text-2xl',
         // Mobile: simple slide from left, Desktop: complex animation
         isVisible 
-          ? 'opacity-100 translate-x-0 translate-y-0 scale-100' 
-          : 'opacity-0 -translate-x-4 lg:-translate-x-8 lg:translate-y-8 lg:scale-95',
+          ? 'opacity-100 translate-x-0 scale-100' 
+          : 'opacity-0 -translate-x-4 lg:-translate-x-8',
         className
       )}
     >
@@ -96,10 +96,6 @@ export function AnimatedTitle({
         'text-outline-dynamic',
         'transition-all duration-700 ease-out',
         'whitespace-nowrap',
-        // Mobile: simple slide, Desktop: complex animation with typography entrance
-        isVisible 
-          ? 'translate-x-0 lg:animate-typography-entrance' 
-          : 'translate-x-4 lg:translate-x-8 opacity-0'
       )}>
         {children}
       </span>

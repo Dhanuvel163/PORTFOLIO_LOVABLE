@@ -55,7 +55,7 @@ export function AnimatedCard({
         'shadow-lg dark:shadow-2xl',
         'border border-border/50 bg-card/80 backdrop-blur-sm',
         // Mobile: no hover effects, Desktop: hover effects
-        'lg:hover:shadow-xl lg:hover:scale-105 lg:hover:-translate-y-1',
+        'lg:hover:shadow-xl lg:hover:-translate-y-1',
         getTransformClass(),
         className
       )}
