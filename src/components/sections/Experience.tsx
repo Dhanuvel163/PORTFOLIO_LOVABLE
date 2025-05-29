@@ -51,13 +51,16 @@ export function Experience() {
       <div className="container mx-auto px-4">
         <AnimatedTitle 
           className="text-center mb-12"
+          showAvatar={true}
+          avatarSrc="https://i.ibb.co/t184M9t/IMG-20250427-212914-4.jpg"
+          avatarFallback="D"
         >
           Experience
         </AnimatedTitle>
         
         <div className="max-w-6xl mx-auto space-y-8">
           {experiences.map((exp, index) => (
-            <AnimatedCard key={index} delay={index + 1} direction={index % 2 === 0 ? 'left' : 'right'}>
+            <AnimatedCard key={index} delay={index + 1} direction="left">
               <div className="p-8">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                   <div>

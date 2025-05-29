@@ -48,26 +48,28 @@ export function AnimatedTitle({
     <Component
       ref={titleRef}
       className={cn(
-        'flex items-center justify-center gap-4 font-bold transition-all duration-1000',
+        'flex items-center justify-center gap-4 font-bold transition-all duration-700 ease-out',
         level === 'h1' && 'text-4xl md:text-6xl',
         level === 'h2' && 'text-3xl md:text-4xl',
         level === 'h3' && 'text-2xl md:text-3xl',
         level === 'h4' && 'text-xl md:text-2xl',
+        // Mobile: simple slide from left, Desktop: complex animation
         isVisible 
-          ? 'opacity-100 translate-y-0 scale-100' 
-          : 'opacity-0 translate-y-8 scale-95',
+          ? 'opacity-100 translate-x-0 translate-y-0 scale-100' 
+          : 'opacity-0 -translate-x-8 lg:translate-y-8 lg:scale-95',
         className
       )}
     >
       {showAvatar && (
         <Avatar 
           className={cn(
-            'transition-all duration-700 delay-200',
+            'transition-all duration-700 ease-out delay-200',
             level === 'h1' && 'w-[7rem] h-[7rem] md:w-[7rem] md:h-[7rem]',
             level === 'h2' && 'w-12 h-12 md:w-16 md:h-16',
             level === 'h3' && 'w-10 h-10 md:w-12 md:h-12',
             level === 'h4' && 'w-8 h-8 md:w-10 md:h-10',
-            isVisible ? 'rotate-0 scale-100' : 'rotate-12 scale-0'
+            // Mobile: no rotation, Desktop: rotation effect
+            isVisible ? 'rotate-0 scale-100' : 'lg:rotate-12 scale-0'
           )}
         >
           <AvatarImage src={avatarSrc} alt="Profile" />
@@ -79,8 +81,9 @@ export function AnimatedTitle({
       
       {icon && (
         <span className={cn(
-          'transition-all duration-700 delay-200',
-          isVisible ? 'rotate-0 scale-100' : 'rotate-12 scale-0'
+          'transition-all duration-700 ease-out delay-200',
+          // Mobile: no rotation, Desktop: rotation effect
+          isVisible ? 'rotate-0 scale-100' : 'lg:rotate-12 scale-0'
         )}>
           {icon}
         </span>
@@ -91,10 +94,11 @@ export function AnimatedTitle({
         'font-black tracking-wider uppercase',
         'relative text-center',
         'text-outline-dynamic',
-        'transition-all duration-1000',
+        'transition-all duration-700 ease-out',
         'whitespace-nowrap',
+        // Mobile: simple slide, Desktop: complex animation with typography entrance
         isVisible 
-          ? 'translate-x-0 animate-typography-entrance' 
+          ? 'translate-x-0 lg:animate-typography-entrance' 
           : 'translate-x-8 opacity-0'
       )}>
         {children}
