@@ -24,11 +24,11 @@ export function Header() {
             Dhanavel
           </AnimatedTitle>
           
-          <h2 className="text-2xl md:text-3xl text-muted-foreground font-light animate-slide-in-left delay-300">
+          <h2 className="text-2xl md:text-3xl text-muted-foreground font-light animate-slide-in-left delay-300 invisible">
             Senior Software Engineer
           </h2>
           
-          <div className="max-w-4xl mx-auto mt-8 animate-slide-in-right delay-500">
+          <div className="max-w-4xl mx-auto mt-8 animate-slide-in-right delay-500 invisible">
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
               A passionate coder with a creative approach to problem-solving, contributing to 
               organizational improvements, team collaboration, and achieving key business goals. 
@@ -41,7 +41,7 @@ export function Header() {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 animate-fade-in delay-700">
+        <div className="flex flex-wrap justify-center gap-4 animate-fade-in delay-700 invisible">
           <Button 
             variant="outline" 
             size="lg" 
@@ -67,7 +67,7 @@ export function Header() {
           </Button>
         </div>
 
-        <div className="flex justify-center items-center gap-2 text-muted-foreground animate-fade-in delay-1000">
+        <div className="flex justify-center items-center gap-2 text-muted-foreground animate-fade-in delay-1000 invisible">
           <Mail className="h-4 w-4" />
           <span>dhanuram99@gmail.com</span>
           <span className="mx-2">|</span>
