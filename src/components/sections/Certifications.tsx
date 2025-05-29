@@ -47,7 +47,7 @@ export function Certifications() {
   ];
 
   return (
-    <AnimatedSection id="certifications" className="flex items-center justify-center py-20">
+    <AnimatedSection id="certifications" className="flex items-center justify-center py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <AnimatedTitle className="text-center mb-12">
           Certifications

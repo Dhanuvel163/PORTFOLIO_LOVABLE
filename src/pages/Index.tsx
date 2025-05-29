@@ -15,19 +15,19 @@ const Index = () => {
     <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
       <div className="scroll-snap-y overflow-y-auto h-screen">
         <Header />
-        <hr/>
+        <hr className='bg-[var(--divider)] h-[1.5px]'/>
         <Experience />
-        <hr/>
+        <hr className='bg-[#2e394b] h-[1.5px]'/>
         <Skills />
-        <hr/>
+        <hr className='bg-[#2e394b] h-[1.5px]'/>
         <Projects />
-        <hr/>
+        <hr className='bg-[#2e394b] h-[1.5px]'/>
         <Achievements />
-        <hr/>
+        <hr className='bg-[#2e394b] h-[1.5px]'/>
         <Certifications />
-        <hr/>
+        <hr className='bg-[#2e394b] h-[1.5px]'/>
         <Education />
-        <hr/>
+        <hr className='bg-[#2e394b] h-[1.5px]'/>
         <Passions />
       </div>
     </ThemeProvider>
