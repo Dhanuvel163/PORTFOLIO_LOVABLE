@@ -96,6 +96,7 @@ export function AnimatedTitle({
         'text-outline-dynamic',
         'transition-all duration-700 ease-out',
         'whitespace-nowrap',
+        'font-[sans-serif]'
       )}>
         {children}
       </span>

@@ -24,7 +24,7 @@ export function Header() {
             Dhanavel
           </AnimatedTitle>
           
-          <h2 className="text-2xl md:text-3xl text-muted-foreground font-light animate-slide-in-left delay-300 invisible">
+          <h2 className="text-2xl md:text-3xl text-muted-foreground animate-slide-in-left delay-300 invisible font-bold">
             Senior Software Engineer
           </h2>
           

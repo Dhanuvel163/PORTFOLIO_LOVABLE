@@ -5,6 +5,10 @@
 
 @layer base {
   :root {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -132,3 +136,4 @@
     }
   }
 }
+
