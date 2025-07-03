@@ -10,7 +10,7 @@ export function Experience() {
   const experiences = [
     {
       company: "RISKCOVRY",
-      role: "Senior Software Engineer",
+      role: "Lead Software Engineer",
       period: "Sept 2023 – Present",
       location: "Bangalore",
       achievements: [

@@ -25,7 +25,7 @@ export function Header() {
           </AnimatedTitle>
           
           <h2 className="text-2xl md:text-3xl text-muted-foreground animate-slide-in-left delay-300 invisible font-bold">
-            Senior Software Engineer
+            Lead Software Engineer
           </h2>
           
           <div className="max-w-4xl mx-auto mt-8 animate-slide-in-right delay-500 invisible">
